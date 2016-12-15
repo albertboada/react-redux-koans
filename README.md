@@ -3,7 +3,7 @@ React Redux koans
 
 This is an exercise based on unit tests to help you learn Redux. This exercise is designed and crafted with love by <a href="http://reactjs.academy">ReactJS.Academy</a>.
 
-## How to use install
+## How to install
 
 - `git clone git@github.com:reactjs-academy/react-redux-koans.git`
 - `cd react-redux-koans`
@@ -12,7 +12,7 @@ This is an exercise based on unit tests to help you learn Redux. This exercise i
 
 ## First part of the exercise, fix the app.
 
-We have written some unit test for the relevant code. Each unit test is side by side to the code it's testing. Example src/actions/index.js unit tests are in src/actions/index.js
+We have written some unit test for the relevant code. Each unit test is side by side to the code it's testing. Example src/actions/index.js unit tests are in src/actions/index.spec.js
 
 The idea is simple, you should execute our unit tests and fix the errors. Once all the code passes the unit tests the you are able to start the app by doing `npm start`.
 
