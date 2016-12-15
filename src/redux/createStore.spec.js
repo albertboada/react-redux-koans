@@ -27,11 +27,12 @@ describe("My simplified src/redux/createStore.js", () => {
   })
 
   it("the getState method should return a JSON object that represents the current state of the app", () => {
-    const store = createStore(reducers)
+    const testReducer = (state = { hello: 'redux'}, action) => state
+    const store = createStore(testReducer)
     const state = store.getState()
 
     // assertions:
-    expect(state.isFetching).to.be.a('boolean')
+    expect(state.hello).to.be.equal('redux')
   })
 
   it("the dispatch method should receive an actions as a parameter", () => {
