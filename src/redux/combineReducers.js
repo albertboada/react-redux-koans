@@ -15,10 +15,10 @@ export const combineReducers = (reducers) => {
         nextState[key] = reducers[key](
           state[key],
           action
-        );
-        return nextState;
+        )
+        return nextState
       },
       {}
-    );
-  };
-};
+    )
+  }
+}
