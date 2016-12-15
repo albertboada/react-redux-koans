@@ -12,13 +12,6 @@ global.document = jsdom(DEFAULT_HTML)
 // Set up a mock window with config
 global.window = document.defaultView
 global.window.expect = expect
-/*
-global.window.__is_preprod = true;
-global.window.__locale_beerder = "fr";
-global.window.__translations_beerder = {
-  "fr": {}
-}
-*/
 
 // Allow for things like window.location
 global.navigator = window.navigator
