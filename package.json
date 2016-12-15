@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha ./src/redux/*.spec.js* ./src/react-redux/*.spec.js* ./src/actions/*.spec.js* ./src/reducers/*.spec.js* ./src/components/*.spec.js* --compilers js:babel-register --require ./setup-jsdom.js -w"
+    "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha ./src/actions/*.spec.js* ./src/reducers/*.spec.js* ./src/redux/*.spec.js* ./src/react-redux/*.spec.js* ./src/components/*.spec.js* --compilers js:babel-register --require ./setup-jsdom.js -w"
   },
   "author": "",
   "license": "ISC",
