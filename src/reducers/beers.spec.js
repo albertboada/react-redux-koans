@@ -7,17 +7,17 @@ describe("The beers reducer in src/reducers/beers.js", () => {
 
     expect(state).not.to.be.equal(undefined)
   })
+  
+  it("should return the default state by default if it doesn't match any action", () => {
+    const state = beersReducer([5], {type: 'test'})
+
+    expect(state).to.be.deep.equal([5])
+  })
 
   it("should handle the action type called RECEIVE_BEERS and add the new beers at the end of the array in the state without mutating the array", () => {
     const beers = [ 2, 3 ]
     const state = beersReducer([1], {type: 'RECEIVE_BEERS', beers: beers})
 
     expect(state).to.be.deep.equal([1, 2, 3])
-  })
-
-  it("should return the default state by default if it doesn't match any action", () => {
-    const state = beersReducer([5], {type: 'test'})
-
-    expect(state).to.be.deep.equal([5])
   })
 })
