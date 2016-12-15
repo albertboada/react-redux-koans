@@ -1,5 +1,7 @@
 import React from 'react'
 
+// this component just adds the store in the context
+
 export class Provider extends React.Component {
   getChildContext() {
     return {
