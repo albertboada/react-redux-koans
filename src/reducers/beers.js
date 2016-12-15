@@ -8,8 +8,8 @@ reducers should do 3 things:
 */
 const beers = (state, action) => {
   switch (action.type) {
-    case 'HOLA':
-      return [...action.beers]
+    case 'CERVEZA':
+      return [...state]
   }
 }
 

@@ -6,9 +6,8 @@ import * as actions from '../../actions'
 
 class List extends React.Component {
   componentDidMount() {
-    api.fetchBeers().then(beers => {
+    api.fetchBeers().then( beers => {
       this.props.dispatch(actions.receiveBeers(beers))
-      // this.props.dispatchReceiveBeers(beers)
     })
   }
 
@@ -24,7 +23,12 @@ class List extends React.Component {
               <h2>{beer.title}</h2>
               <p>{beer.colour} - {beer.country}</p>
               <p>{beer.size} <span className="label label-warning"> &pound; {beer.price}</span></p>
-              <button className="btn btn-primary">Buy me!</button>
+              <button
+                className="btn btn-primary"
+                onClick={() => this.props.dispatch(actions.addBeerToCart(beer))}
+              >
+                Buy me!
+              </button>
               <hr />
             </div>
           </div>
@@ -35,7 +39,7 @@ class List extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  beers: state
+  beers: state.beers
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -43,6 +47,9 @@ const mapDispatchToProps = dispatch => ({
 })
 
 /*
+
+SOME EXPLANATION AND TIPS ABOUT USING CONNECT
+
 // this is the simplest way to connect our component to the store.dispatch method
 const mapDispatchToProps = dispatch => ({
   dispatch

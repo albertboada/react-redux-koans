@@ -22,12 +22,12 @@ In order make easier Redux we have created a simplified version of `redux` and `
 
 ## Second part of the exercise, improve the app.
 
-1. Replace our simplified version of `react` and `react-redux` with https://github.com/reactjs/redux and https://github.com/reactjs/react-redux now that you understood how it works. The official ones have cooler features that you should try ;)
+1. Replace our simplified version of `react` and `react-redux` with https://github.com/reactjs/redux and https://github.com/reactjs/react-redux now that you understood how it works. The official ones have cooler features that you should use ;)
 
-2. Implement the reducers for the cart feature (components/cart/Basket.js). Tip, you need to combine the reducers using https://github.com/reactjs/redux/blob/master/src/combineReducers.js
+2. When we add a beer to the basket twice we get an error in the browser's console. We suggest you the following fix, when a beer is added to the basket it should be removed from the List of beers you can buy.
 
-3. Implement the actions for the cart feature (components/cart/Basket.js)
+3. Move the state of components/App.js (this.state.isSideMenuOpen) to the store
 
-4. Connect the components/cart/Basket.js to the store. Try to bind the action creators with dispatch (https://github.com/reactjs/react-redux/blob/master/src/utils/wrapActionCreators.js)
+4. When a beer is added to the basket the side menu with the basket should be opened
 
-5. Move the state of components/App.js (this.state.isSideMenuOpen) to the store
+5. EXTRA BONUS! There is a button in the Basket component that should remove the beer from the basket. Implement it with its corresponding reducer and actions. When a beer is removed from the basket it should be available in the main list to so it can be added to the basket again
