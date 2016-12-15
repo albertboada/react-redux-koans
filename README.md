@@ -1,7 +1,7 @@
 React Redux koans
 =========================
 
-This is an exercise based on unit tests to help you learn Redux. This exercise is designed and crafted with love by <a href="http://reactjs.academy">ReactJS.Academy</a>.
+This is an exercise based on unit tests to help you learn Redux. This exercise is designed and crafted with love by <a href="http://reactjs.academy">ReactJS.Academy</a>. We've called the app you are about to fix "Brewery JS". You'll see why once you fix it, we hope you like.
 
 ## How to install
 
