@@ -3,7 +3,7 @@ import React from 'react'
 /*
   Connect is a HoC (Hire-order Component) that:
   1. Gets the store from the context (what is context? https://facebook.github.io/react/docs/context.html)
-  2. Subscribes to changes from the store. Meaning when there is a change in the state of the store we rerender the component calling this.forceUpdate()
+  2. Subscribes to changes from the store. Meaning when the store's state changes we rerender the component calling this.forceUpdate()
   3. It get the state from the store by calling store.getState() and maps parts of the state in the child component using props
 */
 export const connect = (mapStateToProps, mapDispatchToProps) => {
@@ -35,6 +35,7 @@ export const connect = (mapStateToProps, mapDispatchToProps) => {
       }
     }
 
+    // what is this? Hint, you should fix something here
     ConnectedComponent.contextTypes = {
       whatIsThisKeySupposedToBeCalled: React.PropTypes.object
     }
