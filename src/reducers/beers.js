@@ -2,9 +2,8 @@ import { RECEIVE_BEERS } from '../actions'
 
 const beers = (state, action) => {
   switch (action.type) {
-    case 'HOLA': {
+    case 'HOLA':
       return [...action.beers]
-    }
   }
 }
 
