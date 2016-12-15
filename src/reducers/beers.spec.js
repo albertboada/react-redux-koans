@@ -6,6 +6,7 @@ describe("The beers reducer in src/reducers/beers.js", () => {
     const state = beersReducer(undefined, {type: 'test'})
 
     expect(state).not.to.be.equal(undefined)
+    expect(Object.prototype.toString.call(state)).to.be.equal('[object Array]')
   })
   
   it("should return the default state by default if it doesn't match any action", () => {
