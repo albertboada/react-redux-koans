@@ -31,3 +31,7 @@ In order make easier to understand Redux we have created a simplified version of
 4. When a beer is added to the basket the side menu with the basket should be opened
 
 5. EXTRA BONUS! There is a button in the Basket component that should remove the beer from the basket. Implement it with its corresponding reducer and actions. When a beer is removed from the basket it should be available in the main list so it can be added to the basket again
+
+## License
+
+This material is available for private, non-commercial use under the [GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html).
