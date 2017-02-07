@@ -1,10 +1,10 @@
-import { TOGGLE_SIDE_MENU, ADD_BEER_TO_CART } from '../actions'
+import { TOGGLE_SIDE_MENU, BUY_BEER } from '../actions'
 
 const menu = (state = { isOpen: false }, action) => {
   switch (action.type) {
     case TOGGLE_SIDE_MENU:
       return { ...state, isOpen: !state.isOpen }
-    case ADD_BEER_TO_CART:
+    case BUY_BEER:
       return { ...state, isOpen: true }
     default:
       return state

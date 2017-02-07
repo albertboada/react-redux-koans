@@ -1,4 +1,4 @@
-import { RECEIVE_BEERS, ADD_BEER_TO_CART, DELETE_BEER_FROM_CART } from '../actions'
+import { RECEIVE_BEERS, BUY_BEER, DELETE_BEER_FROM_CART } from '../actions'
 
 /*
 reducers should do 3 things:
@@ -17,7 +17,7 @@ const beers = (state = [], action) => {
     case RECEIVE_BEERS:
       return [...state, ...action.beers].sort(byId)
 
-    case ADD_BEER_TO_CART:
+    case BUY_BEER:
       return state.filter( beer => ( beer.id !== action.beer.id ))
 
     case DELETE_BEER_FROM_CART:
