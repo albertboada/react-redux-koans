@@ -1,5 +1,5 @@
 import { RECEIVE_BEERS } from '../actions'
-import { ADD_BEER_TO_CART } from '../actions';
+import { ADD_BEER_TO_CART, REMOVE_BEER_FROM_CART } from '../actions';
 
 /*
 reducers should do 3 things:
@@ -13,6 +13,8 @@ const beers = (state = [], action) => {
       return [...state, ...action.beers];
     case ADD_BEER_TO_CART:
       return state.filter((beer) => beer !== action.beer);
+    case REMOVE_BEER_FROM_CART:
+      return [...state, action.beer];
     default:
       return state;
   }

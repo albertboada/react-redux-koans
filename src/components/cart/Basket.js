@@ -1,7 +1,8 @@
 import React from "react"
 import { connect } from 'react-redux'
+import * as actions from '../../actions';
 
-const Basket = ({beers}) => (
+const Basket = ({beers, dispatchRemoveBeerFromCart}) => (
   <div>
     {beers.map( beer => (
       <div className="media" key={beer.id}>
@@ -14,7 +15,7 @@ const Basket = ({beers}) => (
         <div className="media-right">
           <a
             className="fa-stack"
-            onClick={ () => { console.log("I should remove this beer from the cart: ", beer) }}
+            onClick={() => dispatchRemoveBeerFromCart(beer)}
           >
             <i className="fa fa-circle fa-stack-2x"></i>
             <i className="fa fa-trash fa-stack-1x fa-inverse"></i>
@@ -29,14 +30,11 @@ const mapStateToProps = state => ({
   beers: state.cart
 })
 
-const mapDispatchToProps = dispatch => ({
-
-})
+const mapDispatchToProps = {
+  dispatchRemoveBeerFromCart: actions.removeBeerFromCart
+};
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Basket)
-
-
-// export default Basket
