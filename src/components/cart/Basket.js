@@ -1,6 +1,5 @@
 import React from "react"
-// import { connect } from 'react-redux'
-import { connect } from '../../react-redux/connect'
+import { connect } from 'react-redux'
 
 const Basket = ({beers}) => (
   <div>
