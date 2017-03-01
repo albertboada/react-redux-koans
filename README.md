@@ -22,7 +22,7 @@ In order make easier to understand Redux we have created a simplified version of
 
 ## Second part of the exercise, improve the app.
 
-1. Replace our simplified version of `react` and `react-redux` with https://github.com/reactjs/redux and https://github.com/reactjs/react-redux now that you understood how it works. The official ones have cooler features that you should use ;)
+1. Replace our simplified version of `redux` and `react-redux` with https://github.com/reactjs/redux and https://github.com/reactjs/react-redux now that you understood how it works. The official ones have cooler features that you should use ;)
 
 2. When we add the same beer to the basket twice we get an error in the browser's console. We suggest you the following fix, when a beer is added to the basket it should be removed from the List of beers you can buy.
 
